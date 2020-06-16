@@ -1,12 +1,62 @@
+@font-face {
+    font-family: 'wallingtonregular';
+    src: url('fonts/wallingtonregular-pyk7-webfont.woff2') format('woff2'),
+         url('fonts/wallingtonregular-pyk7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bookletter';
+    src: url('fonts/goudy_bookletter_1911-webfont.woff2') format('woff2'),
+         url('fonts/goudy_bookletter_1911-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#content {
+.homepage-background {
+    position: absolute;
     background-image: url('images/clem-onojeghuo-zlABb6Gke24-unsplash.jpg');
     height: 100vh;
+    width: 100%;
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 55px;
+    font-family: 'bookletter';
+    color: white;
+    margin-left: 18px;
+}
+
+.headerContent {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: white;
+    font-family: 'bookletter';
+    font-size: 20px;
+}
+
+.tab {
+    margin: 0px 10px 0px 10px;
 }
