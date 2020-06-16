@@ -8,12 +8,23 @@
 
 @font-face {
     font-family: 'zefani';
-    src: url('zefani_uppercase_demo-regular-webfont.woff2') format('woff2'),
-         url('zefani_uppercase_demo-regular-webfont.woff') format('woff');
+    src: url('fonts/zefani_uppercase_demo-regular-webfont.woff2') format('woff2'),
+         url('fonts/zefani_uppercase_demo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'cursive-font';
+    src: url('fonts/a_perfect_place_-_otf-webfont.woff2') format('woff2'),
+         url('fonts/a_perfect_place_-_otf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
 
 * {
     margin: 0;
@@ -39,7 +50,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
     height: auto;
@@ -67,4 +78,28 @@
 .tab {
     margin: 0px 10px 0px 10px;
     cursor: pointer;
+}
+
+.pageContent {
+    height: auto;
+    width: auto;    
+    position: relative;
+    text-align: center;
+}
+
+.homepage-content {
+    color: whitesmoke;
+    font-family: 'cursive-font';
+    font-size: 90px;
+    position: absolute;
+    left: 50%;
+    top: 30vh;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.home-sub {
+    font-size: 60px;
 }

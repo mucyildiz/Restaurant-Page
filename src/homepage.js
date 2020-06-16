@@ -1,7 +1,8 @@
-import { createHeader } from './index';
+import { createPageContent } from './index';
 
 const createHomePage = (function() {
     let _content = document.getElementById('content');
+
 
     const setBackgroundImage = () => {
         let backgroundContainer = document.createElement('div');
@@ -42,12 +43,24 @@ const createHomePage = (function() {
         return tab;
     }
 
-    const createCenterTitle = () => {
+    const populatePageContent = () => {
+        let pageContent = document.querySelector('.pageContent');
 
+        let homePageContent = document.createElement('div');
+        homePageContent.innerHTML = '-Fake Restaurant-';
+        homePageContent.className = 'homepage-content';
+
+        let homePageContentSubtitle = document.createElement('div');
+        homePageContentSubtitle.innerHTML = "It's simply not real - Guy Fieri";
+        homePageContentSubtitle.className = 'home-sub';
+
+        homePageContent.appendChild(homePageContentSubtitle);
+        pageContent.appendChild(homePageContent);
     }
 
-    return {setBackgroundImage, createHeader};
+
+    return {setBackgroundImage, createHeader, populatePageContent };
 
 })();
 
-export { createHomePage, createHeader };
+export { createHomePage };
