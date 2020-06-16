@@ -88,29 +88,31 @@
 }
 
 .homepage-content {
-    color: whitesmoke;
-    font-family: 'medio';
-    font-size: 50px;
+    color: white;
+    font-family: 'cursive-font';
+    font-size: 80px;
     position: absolute;
     left: 50%;
     top: 20vh;
     transform: translate(-50%);
     background-color: rgba(0, 0, 0, 0.4);
-    border: 3px solid whitesmoke;
-    font-weight: 700;
-    padding: 80px 20px 80px 20px;
+    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    padding: 60px 20px 60px 20px;
 }
 
 .home-sub {
     margin-top: 10px;
     font-size: 30px;
     font-style: italic;
+    font-family: 'medio';
+    font-weight: 700;
 }
 
 .menu-button {
-    margin-top: 15px;
-    padding: 2px 15px 0px 15px;
-    background-color: rgba(0, 0, 0, 0.0);
+    margin-top: 35px;
+    padding: 4px 15px 0px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
     border: 3px solid whitesmoke;
     border-radius: 5px;
     color: white;
@@ -120,9 +122,8 @@
 
 .menu-button:hover {
     background-color: rgba(0, 0, 0, .3);
-    transform: scale(1.03);
 }
 
 .menu-button:active{
-    transform: scale(1);
+    transform: scale(.96);
 }
