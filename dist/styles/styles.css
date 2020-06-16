@@ -1,18 +1,10 @@
 @font-face {
-    font-family: 'wallingtonregular';
-    src: url('fonts/wallingtonregular-pyk7-webfont.woff2') format('woff2'),
-         url('fonts/wallingtonregular-pyk7-webfont.woff') format('woff');
+    font-family: 'medio';
+    src: url('fonts/medio-webfont.woff2') format('woff2'),
+         url('fonts/medio-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'bookletter';
-    src: url('fonts/goudy_bookletter_1911-webfont.woff2') format('woff2'),
-         url('fonts/goudy_bookletter_1911-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 * {
@@ -38,22 +30,23 @@
     width: 100%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    line-height: 70px;
 }
 
 .title {
     font-size: 55px;
-    font-family: 'bookletter';
+    font-family: 'medio';
     color: white;
-    margin-left: 18px;
+    margin-left: 20px;
 }
 
 .headerContent {
     display: flex;
     position: absolute;
     right: 10px;
-    bottom: 20px;
+    bottom: 0;
     color: white;
-    font-family: 'bookletter';
+    font-family: 'medio';
     font-size: 20px;
 }
 
