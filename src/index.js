@@ -1,1 +1,5 @@
-console.log('it works');
+import { createHomePage } from './homepage';
+
+
+createHomePage.setBackgroundImage();
+createHomePage.createHeader();
