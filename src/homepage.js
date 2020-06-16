@@ -21,10 +21,11 @@ const createHomePage = (function() {
     
         let headerContents = document.createElement('div');
         headerContents.className = 'headerContent';
+        let home = _createTab('HOME');
         let menu = _createTab('MENU');
         let contact = _createTab('CONTACT');
         let about = _createTab('ABOUT');
-        let tabs = [menu, contact, about];
+        let tabs = [home, menu, contact, about];
         for(let tab of tabs){
             tab.className = 'tab';
             headerContents.appendChild(tab);
@@ -39,6 +40,10 @@ const createHomePage = (function() {
         let tab = document.createElement('div');
         tab.innerHTML = tabName;
         return tab;
+    }
+
+    const createCenterTitle = () => {
+
     }
 
     return {setBackgroundImage, createHeader};
