@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-image: url('images/clem-onojeghuo-zlABb6Gke24-unsplash.jpg');
+    height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
