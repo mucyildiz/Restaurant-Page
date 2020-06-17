@@ -93,10 +93,10 @@
     font-size: 80px;
     position: absolute;
     left: 50%;
-    top: 20vh;
+    top: 30vh;
     transform: translate(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
     font-weight: 400;
     padding: 60px 20px 60px 20px;
 }
@@ -121,7 +121,7 @@
 }
 
 .menu-button:hover {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .menu-button:active{
