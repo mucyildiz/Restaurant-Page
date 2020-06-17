@@ -130,8 +130,8 @@
 
 .aboutInfo {
     position: absolute;
-    border: thick solid white;
-    top: 20vh;
+    border: 2px solid white;
+    top: 30vh;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -156,4 +156,8 @@
     font-family: 'medio';
     width: 70%;
     padding-bottom: 30px;
+}
+
+.tab:hover {
+    transform: scale(1.05);
 }
