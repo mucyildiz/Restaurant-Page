@@ -27,13 +27,13 @@ const createHeader = (function() {
 
         let headerContents = document.createElement('div');
         headerContents.className = 'headerContent';
-        let home = _createTab('HOME')[0];
-        let menu = _createTab('MENU')[0];
-        let contact = _createTab('CONTACT US')[0];
-        let about = _createTab('ABOUT')[0];
+        let home = _createTab('HOME');
+        let menu = _createTab('MENU');
+        let contact = _createTab('CONTACT');
+        let about = _createTab('ABOUT');
         let tabs = [home, menu, contact, about];
         for(let tab of tabs){
-            tab.className = 'tab';
+            tab.className = 'tab ' + tab.innerHTML.toLowerCase();
             tab.addEventListener('click', _tabFunctionality[tab.innerHTML]);
             headerContents.appendChild(tab);
         }
@@ -46,13 +46,13 @@ const createHeader = (function() {
     const _createTab = (tabName) => {
         let tab = document.createElement('div');
         tab.innerHTML = tabName;
-        return [tab, tabName];
+        return tab;
 }
 
     const _tabFunctionality = {
         'HOME': createHomePage.populatePageContent,
         'MENU': createMenuPage.populateMenuContent,
-        'CONTACT US': createContactPage.populateContactContent,
+        'CONTACT': createContactPage.populateContactContent,
         'ABOUT': createAboutPage.populateAboutContent,
     }
 

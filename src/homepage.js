@@ -1,4 +1,4 @@
-import { createPageContent, clearPageContent } from './index';
+import { clearPageContent } from './index';
 import { createMenuPage } from './menu';
 
 const createHomePage = (function() {
