@@ -15,6 +15,8 @@ const createPageContent = () => {
 
 const createHeader = (function() {
     let _content = document.querySelector('#content');
+    //so we can access the tabs from other modules
+    let tabs = [];
 
     const populateHeader = () => {
         let header = document.createElement('div');
@@ -27,11 +29,16 @@ const createHeader = (function() {
 
         let headerContents = document.createElement('div');
         headerContents.className = 'headerContent';
+
         let home = _createTab('HOME');
+        tabs.push(home);
         let menu = _createTab('MENU');
+        tabs.push(menu);
         let contact = _createTab('CONTACT');
+        tabs.push(contact);
         let about = _createTab('ABOUT');
-        let tabs = [home, menu, contact, about];
+        tabs.push(about);
+
         for(let tab of tabs){
             tab.className = 'tab ' + tab.innerHTML.toLowerCase();
             tab.addEventListener('click', _tabFunctionality[tab.innerHTML]);
@@ -41,6 +48,7 @@ const createHeader = (function() {
         header.appendChild(title);
         header.appendChild(headerContents);
         _content.appendChild(header);
+
 }
 
     const _createTab = (tabName) => {
@@ -56,9 +64,21 @@ const createHeader = (function() {
         'ABOUT': createAboutPage.populateAboutContent,
     }
 
+    const toggleTab = (activeTab) => {
+        for(let tab of tabs){
+            if(tab === activeTab){
+                tab.style.fontWeight = '900';
+            }
+            else{
+                tab.style.fontWeight = 'normal';
+            }
+        }
+    }
 
 
-    return {populateHeader};
+
+
+    return {populateHeader, tabs, toggleTab};
 })();
 
 const clearPageContent = () => {
@@ -66,7 +86,7 @@ const clearPageContent = () => {
     pageContent.innerHTML = '';
 }
 
-export { clearPageContent };
+export { clearPageContent, createHeader };
 
 
 

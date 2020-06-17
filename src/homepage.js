@@ -1,4 +1,4 @@
-import { clearPageContent } from './index';
+import { clearPageContent, createHeader } from './index';
 import { createMenuPage } from './menu';
 
 const createHomePage = (function() {
@@ -15,7 +15,10 @@ const createHomePage = (function() {
 
     const populatePageContent = () => {
         clearPageContent();
+        createHeader.toggleTab(createHeader.tabs[0]);
         let pageContent = document.querySelector('.pageContent');
+        let background = document.querySelector('.homepage-background');
+        background.style.backgroundImage = `url('styles/images/andrew-seaman-sQopSb2K0CU-unsplash.jpg')`
 
         let homePageContent = document.createElement('div');
         homePageContent.innerHTML = 'Fake Restaurant';
