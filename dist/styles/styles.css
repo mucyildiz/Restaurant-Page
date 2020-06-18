@@ -252,3 +252,36 @@
     font-family: 'cursive-font';
     font-size: 70px;
 }
+
+
+.form-container{
+    position: absolute;
+    top: 20vh;
+    border: thick solid white;
+    height: auto;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-gap: 5px;
+}
+
+.message{
+    height: 20vh;
+}
+
+.form input[type=text], .form input[type=email]{
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'medio';
+    font-size: 30px;
+}
