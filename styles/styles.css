@@ -257,13 +257,13 @@
 .form-container{
     position: absolute;
     top: 20vh;
-    border: thick solid white;
+    border: 5px solid white;
     height: auto;
     width: auto;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 50px;
+    padding: 30px;
 }
 
 .form {
